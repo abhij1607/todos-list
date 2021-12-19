@@ -48,14 +48,12 @@ function App() {
       <Router>
       <Header brand="My todo list" />
       <Routes>
-          <Route path="/" element={()=>{
-            return(
+          <Route path="/" element={
               <>
               <AddTodo addTodo={addTodo} />
               <Todos todos={todos} onDelete={onDelete} />
               </>
-            )
-          }} >
+            } >
           </Route>
           <Route path="/about" element={<About/>}>
           </Route>
